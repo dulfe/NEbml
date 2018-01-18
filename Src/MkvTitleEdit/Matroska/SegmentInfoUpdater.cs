@@ -175,7 +175,7 @@ namespace NEbml.MkvTitleEdit.Matroska
 
 			// support for Void block right before SegmentInfo
 			var priorElementId = VInt.MakeId(0);
-			var priorElementStart = -1l;
+			var priorElementStart = -1L;
 
 			// locate SegmentInfo and track its predesessor
 			while (reader.ReadNext())

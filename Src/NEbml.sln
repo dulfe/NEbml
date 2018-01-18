@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Supplementary", "Supplementary", "{E04FAEF2-DE81-416F-8E0E-8172178962E7}"
 	ProjectSection(SolutionItems) = preProject
 		..\.gitignore = ..\.gitignore
@@ -9,14 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Supplementary", "Supplement
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MkvTitleEdit", "MkvTitleEdit\MkvTitleEdit.csproj", "{F2B2D694-3F87-4578-B36E-8FAB7D63806D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{38D51CF9-B33C-434F-9E5C-44B2F8C652F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{38D51CF9-B33C-434F-9E5C-44B2F8C652F2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D06B002E-8DDD-4AF2-A9C9-05A8BE20759E}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Tests", "Core.Tests\Core.Tests.csproj", "{D815D6B4-1CCE-4DDB-8594-3897EE7676E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,9 +29,16 @@ Global
 		{38D51CF9-B33C-434F-9E5C-44B2F8C652F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38D51CF9-B33C-434F-9E5C-44B2F8C652F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38D51CF9-B33C-434F-9E5C-44B2F8C652F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D815D6B4-1CCE-4DDB-8594-3897EE7676E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D815D6B4-1CCE-4DDB-8594-3897EE7676E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D815D6B4-1CCE-4DDB-8594-3897EE7676E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D815D6B4-1CCE-4DDB-8594-3897EE7676E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FBDE244-3E99-42E6-82F9-4842669FB38F}
 	EndGlobalSection
 	GlobalSection(MercurialSourceControlSolutionProperties) = preSolution
 		SolutionIsControlled = True
